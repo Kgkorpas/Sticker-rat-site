@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>StickerRat (RAT)</title>
+
+    <meta
+      name="description"
+      content="StickerRat is the reaction mascot for people tired of missing the hype. Smug, unhinged, exhausted, chaotic, sarcastic, defeated, still hyped. Just an everyday rat trying to make it to EOD."
+    />
+
+    <meta property="og:title" content="StickerRat (RAT)" />
+    <meta property="og:description" content="just an everyday rat trying to make it to EOD" />
+    <meta property="og:image" content="logo.PNG" />
+
+    <meta name="theme-color" content="#0b0b0f" />
+    <link rel="icon" href="logo.PNG" />
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Cookieless analytics: Plausible -->
+    <!-- Update data-domain after you connect a custom domain -->
+    <script defer data-domain="kgkorpas.github.io" src="https://plausible.io/js/script.js"></script>
+  </head>
+
+  <body>
+    <header class="top">
+      <div class="brand">
+        <img class="logo" src="logo.PNG" alt="StickerRat logo" />
+        <div>
+          <div class="name">StickerRat</div>
+          <div class="ticker">Ticker <strong>RAT</strong></div>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#stickers">Stickers</a>
+        <a href="#how">Join</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+
+      <div class="ctaRow">
+        <button class="btn" id="copyTicker" type="button">Copy ticker</button>
+        <a class="btn" href="https://x.com/stickerratcoin" target="_blank" rel="noreferrer">X</a>
+        <a class="btn" href="#" target="_blank" rel="noreferrer">Telegram</a>
+        <a class="btn primary" href="#how">How to join</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="heroText">
+          <h1>Post the RAT. Spread the vibe.</h1>
+
+          <p class="sub">
+            Smug. Unhinged. Tired. Chaotic. Sarcastic. Defeated. Still hyped.
+            <br />
+            Just an everyday rat trying to make it to EOD.
+          </p>
+
+          <div class="card">
+            <div class="cardTitle">Launch info</div>
+
+            <div class="grid">
+              <div class="kv">
+                <div class="k">Status</div>
+                <div class="v">Live</div>
+              </div>
+
+              <div class="kv">
+                <div class="k">Contract</div>
+                <div class="v mono" id="contractValue">Hidden</div>
+              </div>
+
+              <div class="kv">
+                <div class="k">Raid time</div>
+                <div class="v">Daily 9PM ET</div>
+              </div>
+
+              <div class="kv">
+                <div class="k">Sticker drop</div>
+                <div class="v">Weekly</div>
+              </div>
+            </div>
+
+            <div class="miniCtas">
+              <button class="btn primary" id="toggleContract" type="button">Reveal contract</button>
+              <button class="btn" id="copyContract" type="button">Copy contract</button>
+            </div>
+
+            <div class="callout" style="margin-top: 12px;">
+              <strong>Rule</strong>
+              No DM spam. No profit promises. Just reactions people actually use.
+            </div>
+          </div>
+        </div>
+
+        <div class="heroMedia">
+          <div class="mediaCard">
+            <div class="mediaTitle">Typing then sticker slam</div>
+            <img class="media" src="loop.gif" alt="StickerRat typing then slamming a sticker" />
+            <div class="mediaNote">Perfect for pinned posts.</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <h2>About</h2>
+        <p>
+          StickerRat is the reaction mascot for people tired of missing the hype.
+          Smug, unhinged, exhausted, chaotic, sarcastic, defeated, and still hyped.
+        </p>
+
+        <p>
+          Not a celebrity. Not political.
+          Just an everyday rat trying to make it to EOD.
+        </p>
+
+        <div class="callout">
+          <strong>Rule</strong>
+          No DM spam. No profit promises. Just reactions people actually use.
+        </div>
+      </section>
+
+      <section id="stickers" class="section">
+        <h2>Sticker pack preview</h2>
+        <p>Start with 9 reactions. Add new ones weekly. Keep them readable at tiny size.</p>
+
+        <div class="stickerWrap">
+          <img class="stickers" src="stickers.png" alt="StickerRat sticker pack" />
+        </div>
+      </section>
+
+      <section id="how" class="section">
+        <h2>How to join</h2>
+
+        <div class="steps">
+          <div class="step">
+            <div class="num">1</div>
+            <div class="text">
+              <div class="stepTitle">Follow the socials</div>
+              <div class="stepBody">Use the RAT. Learn the vibe.</div>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="num">2</div>
+            <div class="text">
+              <div class="stepTitle">Use the stickers</div>
+              <div class="stepBody">Drop reactions naturally in chats. Do not force it.</div>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="num">3</div>
+            <div class="text">
+              <div class="stepTitle">Join the daily raid</div>
+              <div class="stepBody">One meme. One reply. One sticker. Consistency wins.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="faq" class="section">
+        <h2>FAQ</h2>
+
+        <details>
+          <summary>Is this financial advice</summary>
+          <p>No. This is a meme mascot site. Nothing here is a recommendation to buy or sell anything.</p>
+        </details>
+
+        <details>
+          <summary>Why a rat</summary>
+          <p>Because not everyone wins. Some of us are tired, sarcastic, and still showing up. StickerRat reacts so you do not have to explain it.</p>
+        </details>
+
+        <details>
+          <summary>How do we pick new stickers</summary>
+          <p>Weekly community vote. Top reactions ship. Keep them simple and readable.</p>
+        </details>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>© <span id="year"></span> StickerRat</div>
+      <div class="footerLinks">
+        <a href="#about">About</a>
+        <a href="#stickers">Stickers</a>
+        <a href="#how">Join</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
