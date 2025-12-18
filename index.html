@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>StickerRat (RAT)</title>
+    <meta name="description" content="StickerRat is the reaction mascot. Post the RAT, spread the vibe. Weekly sticker drops, daily meme raids, community chaos." />
+    <meta property="og:title" content="StickerRat (RAT)" />
+    <meta property="og:description" content="Post the RAT. Spread the vibe." />
+    <meta property="og:image" content="assets/logo.png" />
+    <meta name="theme-color" content="#111111" />
+    <link rel="icon" href="assets/logo.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="top">
+      <div class="brand">
+        <img class="logo" src="assets/logo.png" alt="StickerRat logo" />
+        <div>
+          <div class="name">StickerRat</div>
+          <div class="ticker">Ticker: <strong>RAT</strong></div>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#stickers">Stickers</a>
+        <a href="#how">How to join</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+
+      <div class="ctaRow">
+        <a class="btn primary" href="#how">Get stickers</a>
+        <a class="btn" id="copyTicker" href="javascript:void(0)">Copy ticker</a>
+        <a class="btn" href="#" target="_blank" rel="noreferrer">X</a>
+        <a class="btn" href="#" target="_blank" rel="noreferrer">Telegram</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="heroText">
+          <h1>Post the RAT. Spread the vibe.</h1>
+          <p class="sub">
+            StickerRat is the reaction mascot. Weekly sticker drops, daily meme raids, community chaos.
+            No promises. Just memes.
+          </p>
+
+          <div class="card">
+            <div class="cardTitle">Quick info</div>
+            <div class="grid">
+              <div class="kv">
+                <div class="k">Chain</div>
+                <div class="v">Your chain here</div>
+              </div>
+              <div class="kv">
+                <div class="k">Contract</div>
+                <div class="v mono" id="contract">Coming soon</div>
+              </div>
+              <div class="kv">
+                <div class="k">Raid time</div>
+                <div class="v">Daily 9PM ET</div>
+              </div>
+              <div class="kv">
+                <div class="k">Sticker drop</div>
+                <div class="v">Weekly</div>
+              </div>
+            </div>
+
+            <div class="miniCtas">
+              <button class="btn primary" id="copyContract">Copy contract</button>
+              <a class="btn" href="#faq">Is this financial advice?</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="heroMedia">
+          <div class="mediaCard">
+            <div class="mediaTitle">Typing then sticker slam</div>
+            <img class="media" src="assets/loop.gif" alt="StickerRat typing then slamming a sticker" />
+            <div class="mediaNote">Use this as your pinned post media.</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <h2>About</h2>
+        <p>
+          StickerRat is an internet mascot built for chats, replies, and sticker packs.
+          The community makes the memes, picks the next sticker reactions, and runs the raids.
+        </p>
+
+        <div class="callout">
+          <strong>Outsider friendly rule:</strong> We do not spam DMs. We do not promise profits.
+          We make reaction stickers people actually want to use.
+        </div>
+      </section>
+
+      <section id="stickers" class="section">
+        <h2>Sticker pack preview</h2>
+        <p>Start with 9 reactions. Add new ones weekly. Keep them simple and remixable.</p>
+        <div class="stickerWrap">
+          <img class="stickers" src="assets/stickers.png" alt="StickerRat sticker sheet" />
+        </div>
+      </section>
+
+      <section id="how" class="section">
+        <h2>How to join</h2>
+        <div class="steps">
+          <div class="step">
+            <div class="num">1</div>
+            <div class="text">
+              <div class="stepTitle">Follow the socials</div>
+              <div class="stepBody">Set your profile pic to the RAT. Lurk first. Learn the vibe.</div>
+            </div>
+          </div>
+          <div class="step">
+            <div class="num">2</div>
+            <div class="text">
+              <div class="stepTitle">Grab the sticker pack</div>
+              <div class="stepBody">Drop reactions in chats. Make it feel native, not forced.</div>
+            </div>
+          </div>
+          <div class="step">
+            <div class="num">3</div>
+            <div class="text">
+              <div class="stepTitle">Join the daily raid</div>
+              <div class="stepBody">One meme, one reply, one sticker. Consistency wins.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="faq" class="section">
+        <h2>FAQ</h2>
+
+        <details>
+          <summary>Is this financial advice?</summary>
+          <p>No. This is a meme mascot site. Nothing here is a recommendation to buy or sell anything.</p>
+        </details>
+
+        <details>
+          <summary>Where is the contract address?</summary>
+          <p>Put it in the site once your token is live. Until then, keep it as “Coming soon”.</p>
+        </details>
+
+        <details>
+          <summary>How do we pick new stickers?</summary>
+          <p>Weekly community vote. Top 3 ideas ship. Keep them readable at tiny size.</p>
+        </details>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>© <span id="year"></span> StickerRat</div>
+      <div class="footerLinks">
+        <a href="#about">About</a>
+        <a href="#stickers">Stickers</a>
+        <a href="#how">Join</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
